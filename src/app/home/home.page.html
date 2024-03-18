@@ -1,0 +1,146 @@
+
+<ion-header [translucent]="true" >
+  <ion-toolbar class="header">
+    <ion-img src="../../assets/images/radio-ecci-header.png" class="radio-ecci-header"></ion-img>
+    <!-- <ion-icon name="menu-outline" style="margin-left:90%"></ion-icon> -->
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content >
+  
+  <ion-header [translucent]="true" >
+   
+    <ion-toolbar class="sub-header">
+      <!-- Imagen alineada en la parte inicial -->
+      <ion-img src="../../assets/images/logo_radio.jpg" class="logo-radio"></ion-img>
+    
+      <!-- Título centrado -->
+      <ion-title style="color: white; text-align: center; display: flex; align-items: center; justify-content: center; flex-grow: 1; font-weight: bold;">
+        RADIO 
+        <span style="color: white;">E</span>
+        <span style="color: #c41919;font-weight: bold;">C</span>
+        <span style="color: #ebc02b;font-weight: bold;">C</span>
+        <span style="color: white;">I</span>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content style="height: 420px;--background:#787878" >
+    <ion-img src="../../assets/images/Banner1.png"></ion-img>
+  </ion-content>
+  
+      <ion-grid style="margin-top: 20px;">
+        <ion-row >
+          <ion-col size-md="5.5" size-xs="12" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;" >
+            <ion-title style="font-weight: bold;text-align: start;">
+              LO MÁS RECIENTE
+            </ion-title>
+            
+            <ion-slides style="height: 580px;width: 70%;" pager="true">
+              <ion-slide>
+                <ion-card style="--background:#667388;border-radius: 20px;">
+                  <ion-img src="../../assets/images/imagen radio.png"></ion-img>
+                </ion-card>
+              </ion-slide>
+              <ion-slide>
+                <ion-card style="--background:#667388;border-radius: 20px;">
+                  <ion-img src="../../assets/images/En_vivo_RadioECCI.png"></ion-img>
+                </ion-card>
+              </ion-slide>
+            </ion-slides>
+            <ion-title style="font-weight: bold; height: 150px;">
+              ESCUCHANOS EN VIVO
+            </ion-title>
+            <ion-card style="height: 450px; --background:#96b9da; border-radius: 20px; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <ion-card style="height: 150px; --background:#0b8efa; margin: 20px 40px 0 40px; border-radius: 5px; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="height: 150px;">
+                  <img src="Assets/img/LogoNoBG.png" alt="">
+                  <audio controls style="margin-top: 10px;">
+                    <source src="https://us4freenew.listen2myradio.com/live.mp3?typeportmount=s1_27929_stream_960551158">
+                  </audio>
+                </div>
+              </ion-card>
+              <ion-card style="height: 80px; --background:#DFEBF4; border-radius: 5px; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 20px;">
+                <!-- Aquí se mostrarán los mensajes -->
+                <ion-list>
+                  <ion-item *ngFor="let message of messages">{{ message }}</ion-item>
+                </ion-list>
+              </ion-card>
+              <ion-item style="height: 60px; padding: 0 10px 0 10px; --border-radius: 5px; --background:#DFEBF4">
+                <ion-input placeholder="Mensaje"></ion-input>
+                <ion-icon name="happy-outline"></ion-icon>
+              </ion-item>
+              <ion-button size="small" style="margin-left: auto; margin-right: 28px; margin-top: 10px;">ENVIAR</ion-button>
+            </ion-card>
+            
+            
+          </ion-col>
+
+          <ion-col size-md="6.5" size-xs="12" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 550px;">
+            <ion-title style="font-weight: bold; height: 150px;">
+              ESCUCHA NUESTROS PODCASTS
+            </ion-title>
+            <ion-card style="height: 500px; --background:#e3ebf8; border-radius: 20px; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <ion-card style="height: 360px; --background:#2c7cbd; margin: 20px 40px 0 40px; border-radius: 5px; width: 90%;">
+                <div style="height: 300px;">
+                  <audio controls src="https://us4freenew.listen2myradio.com/live.mp3?typeportmount=s1_27929_stream_960551158">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </ion-card>
+            </ion-card>
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+      <ion-footer>
+        <ion-toolbar>
+          <ion-img src="../../assets/images/footer.png" ></ion-img>
+      
+        </ion-toolbar>
+      </ion-footer>
+   
+</ion-content>
+
+<ion-card style="position: absolute;height: 280px;width: 86px;margin-top: 170px;border-radius: 50px;--background:rgba(3, 46, 82, 0.5)">
+    <ion-card-content>
+  
+      <!-- <ion-grid style="border: 2px solid black;width: 40px;height: 20px;">
+        <ion-row style="border: 2px solid black;width: 40px;">
+          <img src="../../assets/images/facebook.png" style="width: 40px;min-width: 40px;height: auto;border: 2px solid black;">
+        </ion-row>
+        <ion-row style="margin-top: 5px;">
+          <img src="../../assets/images/instagram.png" style="width: 30px;min-width: 30px;height: auto;">
+        </ion-row>
+        <ion-row style="margin-top: 5px;"> 
+          <img src="../../assets/images/whatsapp.png" style="width: 30px;min-width: 30px;height: auto;">
+        </ion-row>
+        <ion-row style="margin-top: 5px;">
+          <img src="../../assets//images/youtube.png" style="width: 30px;min-width: 30px;height: auto;">
+        </ion-row>
+        <ion-row style="margin-top: 5px;">
+          <img src="../../assets//images/spotify.png" style="width: 30px;min-width: 30px;height: auto;">
+        </ion-row>
+      </ion-grid> -->
+     
+      <ion-list style="height: 250px;--ion-background-color:transparent;width: 70%;">
+        
+        <div id="SocialContainer" class="container">
+          <a href="https://www.facebook.com/RadioECCICO" class="Socialcard" target="_blank">
+            <img src="../../assets/images/facebook.png" alt="Facebook">
+    
+          </a>
+          <a href="https://instagram.com/radioecci?igshid=OGQ5ZDc2ODk2ZA==" class="Socialcard" target="_blank">
+            <img src="../../assets/images/instagram.png" alt="Instagram">
+  
+          </a> 
+          <img src="../../assets/images/whatsapp.png" style="width: 45px;min-width: 45px;height: auto;margin-left: -1px;">
+          <img src="../../assets//images/spotify.png" style="width: 46px;min-width: 45px;height: auto;margin-left: -5px;margin-top: -2px;">
+          <img src="../../assets//images/youtube.png" style="width: 69px;min-width:69px;height: auto;margin-left: -17px;margin-top: -2px;">
+        </div>
+      </ion-list>
+      
+    </ion-card-content>
+</ion-card>

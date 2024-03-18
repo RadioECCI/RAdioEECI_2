@@ -1,0 +1,7 @@
+{
+  "name": "radio-ecci",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
